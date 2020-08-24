@@ -1,4 +1,3 @@
-title: Snowflower Projects
 
 # [BMES Build Team] 
 ## Workshops
