@@ -18,7 +18,7 @@ void setup()
   pinMode(Red, OUTPUT);		// Define Red as output
   pinMode(Yellow, OUTPUT);	// Define Yellow as output
   digitalWrite(Red, LOW);	// Initialize Red LED as off
-  digitalWrite(Yellow, HIGH);// Initialize Yellow LED as on
+  digitalWrite(Yellow, HIGH); // Initialize Yellow LED as on
 }
 
 void loop()
