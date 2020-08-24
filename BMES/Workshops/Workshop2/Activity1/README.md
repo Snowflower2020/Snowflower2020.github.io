@@ -7,20 +7,21 @@ Turn the LED on after 5 seconds using a conditional statement. (Note: Don’t us
 
 ### Code: 
 
-```markdown
-Syntax highlighted code block
+```markdown c++
+int LED1 = 2;				// Define LED1 as output 2
 
-# Header 1
-## Header 2
-### Header 3
+void setup()
+{
+  pinMode(LED1, OUTPUT);	// Define LED1 as an output
+  digitalWrite(LED1, LOW);	// Initialize LED1 as off
+}
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+void loop()
+{
+  int time = millis();		// Define variable time to hold milliseconds elapsed
+  if (time >= 5000)			// When time is greater than 5 seconds
+  {
+    digitalWrite(LED1,HIGH);	// Turn LED on
+  }
+}
 ```
