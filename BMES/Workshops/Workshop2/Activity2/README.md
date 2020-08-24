@@ -4,7 +4,7 @@
 Have the yellow LED turned on, then every 5 seconds turn off the yellow LED and have the red LED flash 10 times.
 
 ### Circuit:
-![Circuit](https://Snowflower2020.github.io/BMES/Workshops/Workshop2/Activity1/W2A2_Circuit.png)
+![Circuit](https://Snowflower2020.github.io/BMES/Workshops/Workshop2/Activity2/W2A2_Circuit.png)
 
 ### Code: 
 
