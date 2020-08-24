@@ -6,7 +6,6 @@
 Have an LED toggle on/off after three clicks of a button.
 
 ### Circuit:
-![Circuit](https://Snowflower2020.github.io/BMES/Workshops/Workshop2/Activity5/W2A5_Circuit.png)
 
 ### Code: 
 
