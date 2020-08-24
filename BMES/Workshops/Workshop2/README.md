@@ -12,3 +12,6 @@
 #### Activity 4 - LED Switch
 * Have the LED turn on if off when the button is clicked and turn off if on when the button is clicked (toggle on/off).
 * [Solution](https://Snowflower2020.github.io/BMES/Workshops/Workshop2/Activity4)
+#### Activity 5 - LED Three Presses
+* Have the LED toggle on/off after three clicks of a button.
+* [Solution](https://Snowflower2020.github.io/BMES/Workshops/Workshop2/Activity5)
