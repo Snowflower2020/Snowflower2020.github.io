@@ -1,4 +1,6 @@
-# Activity 1 - LED Time
+# [Workshop 2](https://Snowflower2020.github.io/BMES/Workshops/Workshop2)
+
+## Activity 1 - LED Time
 
 ### Task:
 Turn the LED on after 5 seconds using a conditional statement. (Note: Don’t use delay(). Make a variable: int time)
