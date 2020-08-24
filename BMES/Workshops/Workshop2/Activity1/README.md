@@ -7,7 +7,7 @@ Turn the LED on after 5 seconds using a conditional statement. (Note: Don’t us
 
 ### Code: 
 
-```markdown c++
+```c++
 int LED1 = 2;				// Define LED1 as output 2
 
 void setup()
