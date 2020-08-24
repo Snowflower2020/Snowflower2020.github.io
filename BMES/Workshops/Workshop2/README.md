@@ -7,3 +7,8 @@
 * Have the yellow LED turned on, then every 5 seconds turn off the yellow LED and have the red LED flash 10 times.
 * [Solution](https://Snowflower2020.github.io/BMES/Workshops/Workshop2/Activity2)
 #### Activity 3 - LED Button
+* Have the LED light up when the button is pressed down and turn off when not.
+* [Solution](https://Snowflower2020.github.io/BMES/Workshops/Workshop2/Activity3)
+#### Activity 4 - LED Switch
+* Have the LED turn on if off when the button is clicked and turn off if on when the button is clicked (toggle on/off).
+* [Solution](https://Snowflower2020.github.io/BMES/Workshops/Workshop2/Activity4)
