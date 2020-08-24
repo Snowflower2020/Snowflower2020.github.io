@@ -14,34 +14,34 @@ int LED = 2;
 int Button = 7; 
 bool on = false;
 int previous = 0;
-int buttonClicks = 0;
+int BC = 0;
 
 void setup() 
 {  
- pinMode (LED, OUTPUT); 	// initialize pin1 as output
- pinMode (Button, INPUT); 	// initialize pin2 as input
- digitalWrite(LED,LOW);		// start with LED off
+ pinMode (LED, OUTPUT); 	
+ pinMode (Button, INPUT); 	
+ digitalWrite(LED,LOW);	
 }
 
 void loop() 
 {
   
-  int current = digitalRead(Button); // reset current as current reading
-  if (current != previous)			 // check for button press (to account for holding)
+  int current = digitalRead(Button); 
+  if (current != previous)			
   {
-    buttonClicks++;	// increment button counter by 1 when button is pressed    
+    buttonClicks++;	
   	
-    if (digitalRead(Button) == HIGH && on == false && buttonClicks % 3 == 0)
+    if (digitalRead(Button) == HIGH && on == false && BC % 3 == 0)
   	 {
   	  digitalWrite(LED, HIGH);
   	  on = true;
  	 }
- 	else if (digitalRead(Button) == HIGH && on == true && buttonClicks % 3 == 0) 
+ 	else if (digitalRead(Button) == HIGH && on == true && BC % 3 == 0) 
  	 {
  	   digitalWrite(LED, LOW);
  	   on = false;
  	 }
   }
-  previous = current; // update current value as previous value for next iteration
+  previous = current; 
 }
 ```
