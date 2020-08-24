@@ -1,7 +1,7 @@
-# Snowflower Projects
+title: Snowflower Projects
 
-## [BMES Build Team] 
-### Workshops
+# [BMES Build Team] 
+## Workshops
 [Workshop 2](https://Snowflower2020.github.io/BMES/Workshops/Workshop2)
 
 ### Markdown
