@@ -9,18 +9,19 @@ Turn the LED on after 5 seconds using a conditional statement. (Note: Don’t us
 ### Code: 
 
 ```c++
-int LED1 = 2;				// Define LED1 as output 2
+int LED1 = 2;   // Define LED1 as pin 2
 
 void setup()
 {
-  pinMode(LED1, OUTPUT);	// Define LED1 as an output
-  digitalWrite(LED1, LOW);	// Initialize LED1 as off
+  pinMode(LED1, OUTPUT);    // Define LED1 as an output
+  digitalWrite(LED1, LOW);  // Initialize LED1 as off	
 }
 
 void loop()
 {
-  int time = millis();		// Define variable time to hold milliseconds elapsed
-  if (time >= 5000)			// When time is greater than 5 seconds
+  // Define variable time to hold milliseconds elapsed
+  int time = millis();  
+  if (time >= 5000)		     
   {
     digitalWrite(LED1,HIGH);	// Turn LED on
   }
