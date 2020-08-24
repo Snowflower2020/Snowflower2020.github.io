@@ -10,35 +10,27 @@ Have the LED light up when the button is pressed down and turn off when not.
 ### Code: 
 
 ```c++
-int Red = 2;    // Red LED is pin 2
-int Yellow = 6;	// Yellow LED is pin 6
+int LED = 2; 
+int Button = 7; 
+bool on = false;
+int previous = 0;
 
-void setup()
-{
-  pinMode(Red, OUTPUT);		// Define Red as output
-  pinMode(Yellow, OUTPUT);	// Define Yellow as output
-  digitalWrite(Red, LOW);	// Initialize Red LED as off
-  digitalWrite(Yellow, HIGH); // Initialize Yellow LED as on
+void setup() 
+{  
+ pinMode (LED, OUTPUT); 	// initialize pin1 as output
+ pinMode (Button, INPUT); 	// initialize pin2 as input
+ digitalWrite(LED,LOW);	// start with LED off
 }
 
-void loop()
+void loop() 
 {
-  int time = millis();	
-  delay (5000);
-  digitalWrite(Yellow,LOW);
-  for (int i = 1; i <= 10; i++)
+  if (digitalRead(Button) == HIGH)
   {
-    blink();
+    digitalWrite(LED, HIGH);
   }
-  digitalWrite(Yellow,HIGH);
-}
-
-// Write a function for blinking
-void blink()
-{
-  digitalWrite(Red,HIGH);
-  delay(500);
-  digitalWrite(Red,LOW);
-  delay(500);
+  else 
+  {
+    digitalWrite(LED, LOW);
+  }
 }
 ```
