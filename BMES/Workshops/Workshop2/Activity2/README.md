@@ -1,4 +1,5 @@
-# Activity 2 - LED Flashing
+# [Workshop 2](https://Snowflower2020.github.io/BMES/Workshops/Workshop2)
+## Activity 2 - LED Flashing
 
 ### Task:
 Have the yellow LED turned on, then every 5 seconds turn off the yellow LED and have the red LED flash 10 times.
