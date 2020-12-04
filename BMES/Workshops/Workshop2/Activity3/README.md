@@ -5,8 +5,7 @@
 Have the LED light up when the button is pressed down and turn off when not.
 
 ### Circuit:
-![Circuit](https://Snowflower2020.github.io/BMES/Workshops/Workshop2/Activity3/W2A3_Circuit.png)
-
+![Circuit](https://Snowflower2020.github.io/BMES/Workshops/Workshop2/Activity3/W2A4_Circuit%20(2).png)
 ### Code: 
 
 ```c++
