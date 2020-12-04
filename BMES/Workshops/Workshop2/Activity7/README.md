@@ -1,47 +1,60 @@
 # [Workshop 2](https://Snowflower2020.github.io/BMES/Workshops/Workshop2)
 
-## Activity 5 - LED Three Presses
+## Activity 7 - Three LEDs
 
 ### Task:
-Have an LED toggle on/off after three clicks of a button.
-
+You have one button and three separate LEDs. When you hold the button, the first LED turns on. If you are still holding the button after one second, the second LED also turns on. If you are still holding the button after two seconds, the third LED also turns on. If at any point you release the button, only the LEDs that have been turned on stay on. The next time you press the button, all the LEDs will turn off. Further button presses will continue the pattern.
+Hint: Don’t use delays [delay() will stall your code for the specified time]. Instead, think of a way to track time elapsed from the first button press using millis().
 ### Circuit:
 ![Circuit](https://Snowflower2020.github.io/BMES/Workshops/Workshop2/Activity7/W2A7.png)
 ### Code: 
 
 ```c++
-int LED = 2; 
-int Button = 7; 
+// Set pin variables 
+int RedLED = 7; 
+int YellowLED = 4; 
+int GreenLED = 2; 
+int Button = 12; 
+int holdTime;
+int elapsedTime;
 bool on = false;
 int previous = 0;
-int BC = 0;
 
 void setup() 
 {  
- pinMode (LED, OUTPUT); 	
- pinMode (Button, INPUT); 	
- digitalWrite(LED,LOW);	
+ // Initialize LEDs at output
+ pinMode (RedLED, OUTPUT); 
+ pinMode (YellowLED, OUTPUT); 
+ pinMode (GreenLED, OUTPUT); 	
+ // Initialize Button as input
+ pinMode (Button, INPUT);
+ // Start with LEDs off 
+ digitalWrite(RedLED, LOW);
+ digitalWrite(YellowLED, LOW);
+ digitalWrite(GreenLED, LOW);
 }
 
 void loop() 
 {
-  
-  int current = digitalRead(Button); 
-  if (current != previous)			
+  if (digitalRead(Button) == HIGH)
   {
-    buttonClicks++;	
-  	
-    if (digitalRead(Button) == HIGH && on == false && BC % 3 == 0)
-  	 {
-  	  digitalWrite(LED, HIGH);
-  	  on = true;
- 	 }
- 	else if (digitalRead(Button) == HIGH && on == true && BC % 3 == 0) 
- 	 {
- 	   digitalWrite(LED, LOW);
- 	   on = false;
- 	 }
+    digitalWrite(RedLED, HIGH);
+    holdTime = millis();
+    while(digitalRead(Button) == HIGH)
+      {
+      elapsedTime = millis()- holdTime;
+      if (elapsedTime >= 1000)
+      {
+        digitalWrite(YellowLED, HIGH);
+      }
+      if (elapsedTime >= 2000)
+      {
+        digitalWrite(GreenLED, HIGH);
+      }
+    }
   }
-  previous = current; 
+  digitalWrite(RedLED, LOW);
+  digitalWrite(YellowLED, LOW);
+  digitalWrite(GreenLED, LOW);
 }
 ```
