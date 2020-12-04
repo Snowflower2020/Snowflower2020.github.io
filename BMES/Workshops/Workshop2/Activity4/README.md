@@ -6,7 +6,7 @@
 Have the LED turn on if off when the button is clicked and turn off if on when the button is clicked (toggle on/off).
 
 ### Circuit:
-![Circuit](https://Snowflower2020.github.io/BMES/Workshops/Workshop2/Activity4/W2A4_Circuit.png)
+![Circuit](https://Snowflower2020.github.io/BMES/Workshops/Workshop2/Activity3/W2A4_Circuit%20(2).png)
 
 ### Code: 
 
