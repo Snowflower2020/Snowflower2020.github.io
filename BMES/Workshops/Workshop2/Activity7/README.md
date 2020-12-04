@@ -8,7 +8,6 @@
 ### Circuit:
 ![Circuit](https://Snowflower2020.github.io/BMES/Workshops/Workshop2/Activity7/W2A7.png)
 ### Code: 
-
 ```c++
 // Set pin variables 
 int RedLED = 7; 
