@@ -15,3 +15,7 @@
 #### Activity 5 - LED Three Presses
 * Have the LED toggle on/off after three clicks of a button.
 * [Solution](https://Snowflower2020.github.io/BMES/Workshops/Workshop2/Activity5)
+#### Activity 7 - LThree LEDs
+* You have one button and three separate LEDs. When you hold the button, the first LED turns on. If you are still holding the button after one second, the second LED also turns on. If you are still holding the button after two seconds, the third LED also turns on. If at any point you release the button, only the LEDs that have been turned on stay on. The next time you press the button, all the LEDs will turn off. Further button presses will continue the pattern.
+* Hint: Don’t use delays [delay() will stall your code for the specified time]. Instead, think of a way to track time elapsed from the first button press using millis().
+* [Solution](https://Snowflower2020.github.io/BMES/Workshops/Workshop2/Activity7)
